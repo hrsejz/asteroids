@@ -1,6 +1,3 @@
-# this allows us to use code from
-# the open-source pygame library
-# throughout this file
 import pygame
 from constants import *  # noqa: F403
 from player import * # noqa: F403
@@ -10,12 +7,12 @@ def main():
     pygame.init()
     print("Starting asteroids!")
     print(f"Screen width: {SCREEN_WIDTH}")  # noqa: F405
-    print(f"Screen height: {SCREEN_HEIGHT}")
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    print(f"Screen height: {SCREEN_HEIGHT}") # noqa: F405
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT)) # noqa: F405
 
-    x = SCREEN_WIDTH / 2
-    y = SCREEN_HEIGHT / 2
-    player = Player(x, y)
+    x = SCREEN_WIDTH / 2 # noqa: F405
+    y = SCREEN_HEIGHT / 2 # noqa: F405
+    player = Player(x, y) # noqa: F405
 
 
     clock = pygame.time.Clock()
